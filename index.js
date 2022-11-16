@@ -7,17 +7,17 @@ const getMajidMedia = () => {
     let media2 = (4 * p1 + 4 * p2 + 2 * Ex) / 10
 
     if (media1 >= media2) {
-        if (media1 < 5 && media1 >= 4) return media1 + " - D"
-        else if (media1 < 7 && media1 >= 5) return media1 + " - C"
-        else if (media1 < 8.5 && media1 >= 7) return media1 + " - B"
-        else if (media1 >= 8.5) return media1 + " - A"
-        else return media1 + " - F"
+        if (media1 < 5 && media1 >= 4) return media1.toFixed(2) + " - D"
+        else if (media1 < 7 && media1 >= 5) return media1.toFixed(2) + " - C"
+        else if (media1 < 8.5 && media1 >= 7) return media1.toFixed(2) + " - B"
+        else if (media1 >= 8.5) return media1.toFixed(2) + " - A"
+        else return media1.toFixed(2) + " - F"
     } else if (media1 < media2) {
-        if (media2 < 5 && media2 >= 4) return media2 +" - D"
-        else if (media2 < 7 && media2 >= 5) return media2 + " - C"
-        else if (media2 < 8.5 && media2 >= 7) return media2 + " - B"
-        else if (media2 >= 8.5) return media2 + " - A"
-        else return media2 + " - F"
+        if (media2 < 5 && media2 >= 4) return media2.toFixed(2) + " - D"
+        else if (media2 < 7 && media2 >= 5) return media2.toFixed(2) + " - C"
+        else if (media2 < 8.5 && media2 >= 7) return media2.toFixed(2) + " - B"
+        else if (media2 >= 8.5) return media2.toFixed(2) + " - A"
+        else return media2.toFixed(2) + " - F"
     }
 }
 
@@ -28,11 +28,11 @@ const getPieterMedia = () => {
 
     let media = (0.35 * p1 + 0.35 * p2 + 0.3 * Ex)
 
-    if (media < 5.5 && media >= 5) return media + " - D"
-    else if (media < 7 && media >= 5.5) return media + " - C"
-    else if (media < 9 && media >= 7) return media + " - B"
-    else if (media >= 9) return media + " - A"
-    else return media + " - F"
+    if (media < 5.5 && media >= 5) return media.toFixed(2) + " - D"
+    else if (media < 7 && media >= 5.5) return media.toFixed(2) + " - C"
+    else if (media < 9 && media >= 7) return media.toFixed(2) + " - B"
+    else if (media >= 9) return media.toFixed(2) + " - A"
+    else return media.toFixed(2) + " - F"
 }
 
 const getJoaoMedia = () => {
@@ -41,11 +41,11 @@ const getJoaoMedia = () => {
 
     let media = (p1 + p2) / 2
 
-    if (media < 4.9 && media >= 4) return media + " - D"
-    else if (media < 6.9 && media >= 5) return media + " - C"
-    else if (media < 8.9 && media >= 7) return media + " - B"
-    else if (media >= 9) return media + " - A"
-    else return media + " - F"
+    if (media < 4.9 && media >= 4) return media.toFixed(2) + " - D"
+    else if (media < 6.9 && media >= 5) return media.toFixed(2) + " - C"
+    else if (media < 8.9 && media >= 7) return media.toFixed(2) + " - B"
+    else if (media >= 9) return media.toFixed(2) + " - A"
+    else return media.toFixed(2) + " - F"
 }
 
 const getJiriMedia = () => {
@@ -53,13 +53,13 @@ const getJiriMedia = () => {
     const p2 = document.getElementById("p2Edvt").value || 0
     const Ex = document.getElementById("ExEdvt").value || 0
 
-    let media = (0.7 * (p1+p2) + 0.3 * Ex)
+    let media = (0.7 * (p1 + p2) + 0.3 * Ex)
 
-    if (media < 6.4 && media >= 5) return media + " - D"
-    else if (media < 7.4 && media >= 6.5) return media + " - C"
-    else if (media < 8.9 && media >= 7.5) return media + " - B"
-    else if (media >= 9) return media + " - A"
-    else return media + " - F"
+    if (media < 6.4 && media >= 5) return media.toFixed(2) + " - D"
+    else if (media < 7.4 && media >= 6.5) return media.toFixed(2) + " - C"
+    else if (media < 8.9 && media >= 7.5) return media.toFixed(2) + " - B"
+    else if (media >= 9) return media.toFixed(2) + " - A"
+    else return media.toFixed(2) + " - F"
 }
 
 const getDeboraMedia = () => {
@@ -68,11 +68,11 @@ const getDeboraMedia = () => {
 
     let media = (0.75 * p1 + 0.25 * p2)
 
-    if (media < 6 && media >= 5) return media + " - D"
-    else if (media < 7 && media >= 6) return media + " - C"
-    else if (media < 8.5 && media >= 7) return media + " - B"
-    else if (media >= 8.5) return media + " - A"
-    else return media + " - F"
+    if (media < 6 && media >= 5) return media.toFixed(2) + " - D"
+    else if (media < 7 && media >= 6) return media.toFixed(2) + " - C"
+    else if (media < 8.5 && media >= 7) return media.toFixed(2) + " - B"
+    else if (media >= 8.5) return media.toFixed(2) + " - A"
+    else return media.toFixed(2) + " - F"
 }
 
 const writeMedia = () => {
